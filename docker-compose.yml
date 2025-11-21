@@ -1,0 +1,33 @@
+services:
+  backend:
+    build: ./
+    container_name: nodevault-backend
+    ports:
+      - "4000:3000"
+    stdin_open: true      # enables interactive mode
+    tty: true             # keeps container alive for interactive CLI
+    environment:
+      - MONGO_URI=mongodb://admin:admin123@mongo:27017/?authSource=admin
+      - DB_NAME=nodevault
+    networks:
+      - nodevault-net
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0
+    container_name: nodevault-mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin123
+    volumes:
+      - nodevault-data:/data/db
+    networks:
+      - nodevault-net
+
+networks:
+  nodevault-net: {}
+
+volumes:
+  nodevault-data: {}
+

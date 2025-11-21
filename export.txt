@@ -1,0 +1,10 @@
+=== NodeVault Export Report ===
+File: export.txt
+Exported At: 2025-11-21T12:27:34.734Z
+Total Records: 5
+-------------------------------
+ID: 1763722136753 | Name: Shahher | Value: 3 | Created: 2025-11-21T10:48:56.753Z
+ID: 1763724869289 | Name: Hashir | Value: 4 | Created: 2025-11-21T11:34:29.289Z
+ID: 1763726364940 | Name: Nabeel | Value: 10 | Created: 2025-11-21T11:59:24.940Z
+ID: 1763726395221 | Name: King | Value: 7 | Created: 2025-11-21T11:59:55.221Z
+ID: 1763727190345 | Name: abdul | Value: 100 | Created: 2025-11-21T12:13:10.345Z
